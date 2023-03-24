@@ -1,0 +1,105 @@
+<h1>SQL CODE SNIPPETS</h1>
+
+<h2>GET THE DATA</h2>
+<h3>SELECT TOP (1000) [id]
+  ,[first_name]
+  ,[drive_train]
+FROM [dbo].[testtable]</h3>
+
+
+<h2>ADDING A COLUMN</h2>
+<h3>ALTER TABLE testtable ADD drive_train VARCHAR(max)</h3>
+
+<h2>INSERTING DATA</h2>
+<h3>INSERT INTO testtable (id, first_name, drive_train)
+  VALUES (4, 'stop', 'check');</h3>
+
+<h2>CREATING TABLE WITH UNIQUE ID</h2>
+<h3>CREATE TABLE finaltesttable (
+  id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+  name VARCHAR(255)
+  );
+</h3>
+
+<h3>creating a table with counting number</h3>
+CREATE TABLE finaltesttable (
+  id int IDENTITY(0,1),
+  name VARCHAR(255)
+  );
+
+<h3>DROP TABLE</h3>
+<h2>DROP TABLE (name of table)</h2>
+
+
+
+
+
+
+<h1>HOW TO DO THIS ALL IN NEXT JS</h1>
+<h2>HANDLE CLICK METHOD</h2>
+<h3>
+  async function handleClick() {
+    // Send fetch request to server
+    const res = await fetch('/api/myFunction', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({/* name: 'David' */})
+    });  
+      const data = await res.json();
+    // Display data from server
+    alert(data.message);
+  }
+</h3>
+<h2>HANDLE CLICK BUTTON</h2>
+<h3>
+  <button onClick={handleClick}>Greet</button>
+</h3>
+
+<h2>QUERY DATABASE FUNCTION</h2>
+<h3>
+
+export async function queryDatabase(query) {
+  try {
+    const pool = new sql.ConnectionPool(dbConfig)
+    const poolConnect = pool.connect()
+    await poolConnect
+
+    const request = pool.request()
+    const result = await request.query('SELECT * FROM finaltesttable')
+    
+    // await poolConnect.close()
+    await pool.close()
+
+    return result.recordset;
+
+
+  } catch (err) {
+    console.log(err);
+  } 
+  module.exports = {
+    queryDatabase
+  };
+}
+</h3>
+
+<h2>GET SERVER SIDE PROPS FUNCTION</h2>
+<h3>
+  export async function getServerSideProps() {
+    let results = await queryDatabase();
+    return {
+      props: {
+        results
+      }
+    }
+  }
+</h3>
+
+<h2>CODE FOR PUTING DATA ON PAGE</h2>
+<h3>
+  <h1>Database Results</h1>
+  <pre>{JSON.stringify(props.results, null, 2)}</pre>
+
+  DONT FORGET TO PASS IN "props" TO THE MAIN FUNCTION
+</h3>

@@ -1,0 +1,61 @@
+leads:
+Co-Captain - Oliver Howe
+
+    Mechanism - Diego Gutierrez
+
+    Chassis - Arianna Morroni 
+
+    CAD - Quinn 
+
+    Electrical - EY Esson 
+
+    Programming - Xander Hung 
+
+    Strategy - Porter Otteson 
+
+    Drive - Eshaan Palanati
+
+    Outreach - AJ 
+
+    Safety - Grant Rechtin 
+
+    Skunkworks - Bryce Wetzel 
+
+
+videos and photos - Waverly
+
+interview sub teams
+build out sybteam how to guide
+a lot of stuff from CAD, part list page and detaisls
+coeding - glssary 
+
+
+CAD:
+notes on how to design
+video on Quinn talking about the some of the design
+photos and download links
+
+Build:
+video of bryce talking about it with pics of the build in the video
+step by step process of the build function
+where to find pieces to build
+photos and links to those pieces
+
+electrical:
+video on EY talking about it and showing it
+step by step process of the electrical function
+where to find pieces to build
+photos and links to those pieces
+
+programming:
+Oliver quick break down
+how to get the code
+photos and links to code
+read me
+downloading all the assets
+
+test:
+videos of final product nd how to see how it works.
+movement
+how to see how everything works
+
