@@ -48,7 +48,7 @@ function RobotsComp() {
           {/* 2023 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img className="rounded-t-lg" src="2023.png" alt="Coming soon" />
+              <img className="rounded-t-lg" src="2023.jpeg" alt="Coming soon" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">

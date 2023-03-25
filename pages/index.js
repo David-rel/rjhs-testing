@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
-
-
 export default function Index() {
+
+    const [info, setInfo] = useState(null)
+
+     
+
   return (
     <div>
-     
+    
       <div className="bg-gray-800">
         <div className="">
           <section class="relative bg-[url(../public/DSC_3898-01.jpeg)] bg-cover bg-center bg-no-repeat">

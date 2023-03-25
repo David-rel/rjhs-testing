@@ -37,17 +37,20 @@ const SearchBar = () => {
   }
 
   return (
-    <div className="w-80 z-10">
+    <div className="w-full max-w-screen-md mx-auto px-4 mt-8 mb-8">
       <input
         type="text"
         className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-        placeholder="Search"
+        placeholder="Search Specific Team"
         value={search}
         onChange={handleSearch}
       />
       <div className="relative">
         {results.map((result, index) => (
-          <Link href={`/TeamResources/Scouter/Team?id=${result}`} key={index}>
+          <Link
+            href={`/TeamResources/Scouter/Team?id=${result}`}
+            key={index}
+          >
             <button
               key={index}
               className="w-full text-left px-3 py-2 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:bg-gray-300"

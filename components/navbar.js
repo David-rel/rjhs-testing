@@ -11,12 +11,6 @@ const Navbar = () => {
 
 const path = router.asPath
 
-console.log(path)
-
-if(path == '/TeamResources/Scouter') {
-  console.log("yes")
-}
-
 
 
   const menuIcon = (
