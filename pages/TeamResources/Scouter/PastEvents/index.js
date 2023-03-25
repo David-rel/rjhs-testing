@@ -19,7 +19,7 @@ function Past() {
       }
 
       httpGet(
-        `https://www.thebluealliance.com/api/v3/event/2022ksla/rankings`,
+        `https://www.thebluealliance.com/api/v3/event/${key}/rankings`,
         'zldOgyr0zcuk7znnToBy3rbs8B6SmCnwaLd0Ew74DXSnPENUs58vPsYMYnpX3hyh'
       )
 
@@ -29,7 +29,7 @@ function Past() {
       const callAPI = async () => {
         try {
           const res = await fetch(
-            `https://www.thebluealliance.com/api/v3/event/2022ksla/rankings`
+            `https://www.thebluealliance.com/api/v3/event/${key}/rankings`
           )
           const data = await res.json()
           console.log(data.rankings)
