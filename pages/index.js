@@ -13,6 +13,7 @@ export default function Index() {
     <div>
     
       <div className="bg-gray-800">
+        <h1 className='text-4xl bg-white'>Please "git pull" before working on code</h1>
         <div className="">
           <section class="relative bg-[url(../public/DSC_3898-01.jpeg)] bg-cover bg-center bg-no-repeat">
             <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>

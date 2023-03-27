@@ -10,7 +10,6 @@ const Display = () => {
     setDropdownValue(event.target.value)
   }
 
-  alert('please make sure to do a git pull every time you work on the website test app')
 
   return (
     <>
