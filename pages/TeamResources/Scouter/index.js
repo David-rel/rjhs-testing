@@ -10,6 +10,8 @@ const Display = () => {
     setDropdownValue(event.target.value)
   }
 
+  alert('please make sure to do a git pull every time you work on the website test app')
+
   return (
     <>
       <div className="bg-gray-800 py-4 sm:py-6 md:py-8 lg:py-10 flex flex-wrap justify-center">
@@ -19,7 +21,7 @@ const Display = () => {
               Past Events
             </h1>
             <p className="text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4">
-              Go to the past events in the whole world
+              Go to the past events in the whole world of 2022
             </p>
             <div className="flex">
               <SearchBarEvents />
@@ -52,7 +54,7 @@ const Display = () => {
               <option value="Colorado Regional(2022code)">
                 Colorado Regional(2022code)
               </option>
-              <option value="Heartland Regional(2022ksla">
+              <option value="Heartland Regional(2022ksla)">
                 Heartland Regional(2022ksla)
               </option>
             </select>

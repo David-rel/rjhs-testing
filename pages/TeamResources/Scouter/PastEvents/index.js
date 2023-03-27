@@ -1,52 +1,89 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
+import AwardRanking from '../../../../components/AwardRanking'
+import EPARanking from '../../../../components/EPARanking'
 import Ranking from '../../../../components/Ranking'
 
 function Past() {
   const router = useRouter()
   const { id, key } = router.query
   const [info, setInfo] = useState([])
+  const [teamKey, SetTeamKey] = useState([])
 
+  useEffect(() => {
+    function httpGet(url, key) {
+      var xmlHttp = new XMLHttpRequest()
+      xmlHttp.open('GET', url, false)
+      xmlHttp.setRequestHeader('X-TBA-Auth-Key', key)
+      xmlHttp.send()
+      return xmlHttp.responseText
+    }
 
+    httpGet(
+      `https://www.thebluealliance.com/api/v3/event/${key}/rankings`,
+      'zldOgyr0zcuk7znnToBy3rbs8B6SmCnwaLd0Ew74DXSnPENUs58vPsYMYnpX3hyh'
+    )
 
-    useEffect(() => {
-      function httpGet(url, key) {
-        var xmlHttp = new XMLHttpRequest()
-        xmlHttp.open('GET', url, false)
-        xmlHttp.setRequestHeader('X-TBA-Auth-Key', key)
-        xmlHttp.send()
-        return xmlHttp.responseText
-      }
+    //
+    //https://www.thebluealliance.com/api/v3/event/2022code/teams/statuses
 
-      httpGet(
-        `https://www.thebluealliance.com/api/v3/event/${key}/rankings`,
-        'zldOgyr0zcuk7znnToBy3rbs8B6SmCnwaLd0Ew74DXSnPENUs58vPsYMYnpX3hyh'
-      )
-
-      //
-      //https://www.thebluealliance.com/api/v3/event/2022code/teams/statuses
-
-      const callAPI = async () => {
-        try {
-          const res = await fetch(
-            `https://www.thebluealliance.com/api/v3/event/${key}/rankings`
-          )
-          const data = await res.json()
-          console.log(data.rankings)
-          if (data) {
-            setInfo(data.rankings)
-          }
-        } catch (err) {
-          console.log(err)
+    const callAPI = async () => {
+      try {
+        const res = await fetch(
+          `https://www.thebluealliance.com/api/v3/event/${key}/rankings`
+        )
+        const data = await res.json()
+        //console.log(data.rankings)
+        if (data) {
+          setInfo(data.rankings)
         }
+      } catch (err) {
+        console.log(err)
       }
+    }
 
-      callAPI()
-    }, [])
+    callAPI()
+  }, [])
 
-    
+      useEffect(() => {
+        function httpGet(url, key) {
+          var xmlHttp = new XMLHttpRequest()
+          xmlHttp.open('GET', url, false)
+          xmlHttp.setRequestHeader('X-TBA-Auth-Key', key)
+          xmlHttp.send()
+          return xmlHttp.responseText
+        }
 
-        //  `https://www.thebluealliance.com/api/v3/event/${key}/rankings`,
+        httpGet(
+          `https://www.thebluealliance.com/api/v3/event/${key}/teams`,
+          'zldOgyr0zcuk7znnToBy3rbs8B6SmCnwaLd0Ew74DXSnPENUs58vPsYMYnpX3hyh'
+        )
+
+        //
+        //https://www.thebluealliance.com/api/v3/event/2022code/teams/statuses
+
+        const callAPI = async () => {
+          try {
+            const res = await fetch(
+              `https://www.thebluealliance.com/api/v3/event/${key}/teams`
+            )
+            const data = await res.json()
+            console.log(data)
+            if (data) {
+              SetTeamKey(data)
+            }
+          } catch (err) {
+            console.log(err)
+          }
+        }
+
+        callAPI()
+      }, [])
+
+
+
+
+
 
 
   return (
@@ -61,12 +98,12 @@ function Past() {
           <div className="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-4 mx-4 my-4">
             <div className="max-w-24">
               <div className="h-48 p-2 rounded-lg overflow-y-auto border-8 border-gray-400 bg-gray-200 text-center text-3xl">
-                Ranking 
+                Ranking
                 <div className="border-2 border-gray-400 my-2"></div>
                 {info && (
                   <div>
                     {info.map((info) => (
-                      <Ranking key={info.id} info={info} />
+                      <Ranking key={info.id} info={info} team_key={key} />
                     ))}
                   </div>
                 )}
@@ -76,12 +113,12 @@ function Past() {
 
             <div className="max-w-24">
               <div className="h-48 p-2 rounded-lg overflow-y-auto border-8 border-gray-400 bg-gray-200 text-center text-3xl">
-                Ranking 
+                EPA Ranking
                 <div className="border-2 border-gray-400 my-2"></div>
                 {info && (
                   <div>
                     {info.map((info) => (
-                      <Ranking key={info.id} info={info} />
+                      <EPARanking key={info.id} info={info} event_key={key} />
                     ))}
                   </div>
                 )}
@@ -91,12 +128,17 @@ function Past() {
 
             <div className="max-w-24">
               <div className="h-48 p-2 rounded-lg overflow-y-auto border-8 border-gray-400 bg-gray-200 text-center text-3xl">
-                Ranking 
+                Awards
                 <div className="border-2 border-gray-400 my-2"></div>
-                {info && (
+                {teamKey && (
                   <div>
-                    {info.map((info) => (
-                      <Ranking key={info.id} info={info} />
+                    {teamKey.map((teamKey) => (
+                      <AwardRanking
+                        key={teamKey.id}
+                        team_key={teamKey}
+                        event_key={key}
+                        info={info}
+                      />
                     ))}
                   </div>
                 )}
