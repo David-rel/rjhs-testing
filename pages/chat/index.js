@@ -22,7 +22,7 @@ const InputPage = () => {
             value={inputValue || ''}
             onChange={e => setInputValue(e.target.value)}
           />
-          <Link href={`/chat/main?key=${inputValue || null}`}>
+          <Link href={`/chat/main?key=${inputValue || 'none'}`}>
             <button className="mt-6 bg-gradient-to-r from-red-400 to-white text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:from-cyan-500 hover:to-light-blue-600 transition-colors duration-300">
               Submit
             </button>
@@ -36,4 +36,4 @@ const InputPage = () => {
 export default InputPage
 
 
-//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
+//Davids API key (get your own) =     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

@@ -46,6 +46,7 @@ function App() {
   }
 
   async function processMessageToChatGPT(chatMessages) {
+    
     let apiMessages = chatMessages.map(messageObject => {
       let role = ''
       if (messageObject.sender === 'ChatGPT') {
@@ -55,6 +56,11 @@ function App() {
       }
       return { role: role, content: messageObject.message }
     })
+
+    if (key == 'none') {
+      alert('please enter a valid API key')
+      router.reload()
+    }
 
     const apiRequestBody = {
       model: 'gpt-3.5-turbo',
