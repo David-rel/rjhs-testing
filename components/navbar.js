@@ -138,18 +138,24 @@ const path = router.asPath
                     Calendar
                   </a>
                 </Link>
+                <Link href="/chat" legacyBehavior>
+                  <a className="text-white px-3 py-2 rounded-md text-sm font-medium">
+                    ChatBot (alpha)
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden my-2">
-            {path == '/TeamResources/Scouter' ||  path == '/TeamResources/Scouter/Scout' ? (
+            {path == '/TeamResources/Scouter' ||
+            path == '/TeamResources/Scouter/Scout' ? (
               <>
                 <SearchBar />
               </>
             ) : (
               <></>
             )}
-            
+
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-white"
