@@ -36,4 +36,4 @@ const InputPage = () => {
 export default InputPage
 
 
-//Davids API key (get your own) =     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
+//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
