@@ -4,7 +4,7 @@ import React from 'react'
 function FIRST() {
   return (
     <div className="bg-gray-700">
-      <section class="relative bg-[url(../public/open-graph-first-logo.png)] bg-cover bg-center bg-no-repeat">
+      <section class="relative bg-[url(../public/images/open-graph-first-logo.png)] bg-cover bg-center bg-no-repeat">
         <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -43,17 +43,17 @@ function FIRST() {
         <div className="lg:flex w-full lg:w-1/2 ">
           <img
             className="lg:block hidden w-full rounded-lg"
-            src="./DSC_3014-01.jpeg"
+            src="./images/DSC_3014-01.jpeg"
             alt="people discussing on board"
           />
           <img
             className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-            src="./DSC_3014-01.jpeg"
+            src="./images/DSC_3014-01.jpeg"
             alt="people discussing on board"
           />
           <img
             className="sm:hidden block w-full rounded-lg"
-            src="./DSC_3014-01.jpeg"
+            src="./images/DSC_3014-01.jpeg"
             alt="people discussing on board"
           />
         </div>
@@ -63,17 +63,17 @@ function FIRST() {
         <div className="lg:flex items-center w-full lg:w-1/2">
           <img
             className="lg:block hidden w-full rounded-lg"
-            src="./DSC_3927-01.jpeg"
+            src="./images/DSC_3927-01.jpeg"
             alt="people discussing on board"
           />
           <img
             className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-            src="./DSC_3927-01.jpeg"
+            src="./images/DSC_3927-01.jpeg"
             alt="people discussing on board"
           />
           <img
             className="sm:hidden block w-full rounded-lg"
-            src="./DSC_3927-01.jpeg"
+            src="./images/DSC_3927-01.jpeg"
             alt="people discussing on board"
           />
         </div>
@@ -110,7 +110,6 @@ function FIRST() {
           </p>
         </div>
       </div>
-
     </div>
   )
 }

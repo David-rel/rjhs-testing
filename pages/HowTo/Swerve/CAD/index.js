@@ -39,7 +39,7 @@ function CAD() {
               </p>
               <div className="w-full">
                 <img
-                  src="/fullchasis.png"
+                  src="/images/fullchasis.png"
                   alt="Purple flowers on a book"
                   className="md:w-full sm:w-1/2 w-full"
                 />
@@ -114,7 +114,7 @@ function CAD() {
         <div class="hidden relative lg:block  lg:col-span-3">
           <img
             class="absolute inset-0 w-full h-full object-cover object-center"
-            src="/swerve_module.png"
+            src="/images/swerve_module.png"
             alt="Ad- woman on a beach"
           />
         </div>
@@ -136,7 +136,7 @@ function CAD() {
         <div class="hidden relative lg:block  lg:col-span-3">
           <img
             class="absolute inset-0 w-full h-full object-cover object-center"
-            src="/mini_power_module.png"
+            src="/images/mini_power_module.png"
             alt="Ad- woman on a beach"
           />
         </div>
@@ -157,7 +157,7 @@ function CAD() {
         <div class="hidden relative lg:block  lg:col-span-3">
           <img
             class="absolute inset-0 w-full h-full object-cover object-center"
-            src="/Pneumatics Hub.png"
+            src="/images/Pneumatics Hub.png"
             alt="Ad- woman on a beach"
           />
         </div>
@@ -177,7 +177,7 @@ function CAD() {
         <div class="hidden relative lg:block  lg:col-span-3">
           <img
             class="absolute inset-0 w-full h-full object-cover object-center"
-            src="/Power Distributor.png"
+            src="/images/Power Distributor.png"
             alt="Ad- woman on a beach"
           />
         </div>
@@ -210,7 +210,7 @@ function CAD() {
         <div class="hidden relative lg:block  lg:col-span-3">
           <img
             class="absolute inset-0 w-full h-full object-cover object-center"
-            src="/roborio.png"
+            src="/images/roborio.png"
             alt="Ad- woman on a beach"
           />
         </div>
@@ -231,7 +231,7 @@ function CAD() {
         <div class="hidden relative lg:block  lg:col-span-3">
           <img
             class="absolute inset-0 w-full h-full object-cover object-center"
-            src="/network_switch.png"
+            src="/images/network_switch.png"
             alt="Ad- woman on a beach"
           />
         </div>
@@ -311,7 +311,6 @@ function CAD() {
           </section>
         </div>
       </div>
-
     </div>
   )
 }

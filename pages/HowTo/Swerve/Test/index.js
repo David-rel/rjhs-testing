@@ -36,7 +36,7 @@ function Test() {
               </p>
               <div className="w-full">
                 <img
-                  src="/swerve.jpg"
+                  src="/images/swerve.png"
                   alt="swerve drive"
                   className="md:w-full sm:w-1/2 w-full"
                 />

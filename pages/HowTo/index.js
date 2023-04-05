@@ -5,7 +5,7 @@ export default function HowTo() {
   return (
     <div className="bg-gray-800">
       {/* */}
-      <section class="relative bg-[url(../public/IMG_7835.JPG)] bg-cover bg-center bg-no-repeat">
+      <section class="relative bg-[url(../public/images/IMG_7835.JPG)] bg-cover bg-center bg-no-repeat">
         <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -27,7 +27,7 @@ export default function HowTo() {
       <div class="flex justify-center py-12 px-12 space-x-12">
         <div class="rounded-lg shadow-lg bg-white max-w-sm">
           <a href="#!">
-            <img class="rounded-t-lg" src="swerve.png" alt="" />
+            <img class="rounded-t-lg" src="images/swerve.png" alt="" />
           </a>
 
           <div class="p-6">

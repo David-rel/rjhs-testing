@@ -9,7 +9,7 @@ const SearchBar = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/teams.json')
+        const response = await fetch('/json/teams.json')
         const data = await response.json()
         setTeams(data.Teams)
       } catch (error) {

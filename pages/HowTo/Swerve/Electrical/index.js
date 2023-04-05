@@ -37,7 +37,7 @@ function Electrical() {
               </p>
               <div className="w-full">
                 <img
-                  src="/IMG_3999.jpg"
+                  src="/images/IMG_3999.jpg"
                   alt="Purple flowers on a book"
                   className="md:w-full sm:w-1/2 w-full"
                 />

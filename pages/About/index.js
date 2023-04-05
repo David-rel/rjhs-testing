@@ -36,17 +36,17 @@ function About() {
         <div className="lg:mt-14 sm:mt-10 mt-12">
           <img
             className="lg:block hidden w-full rounded-lg"
-            src="./DSC_3953-01.jpeg"
+            src="./images/DSC_3953-01.jpeg"
             alt="Group of people Chilling"
           />
           <img
             className="lg:hidden sm:block hidden w-full rounded-lg"
-            src="./DSC_3953-01.jpeg"
+            src="./images/DSC_3953-01.jpeg"
             alt="Group of people Chilling"
           />
           <img
             className="sm:hidden block w-full rounded-lg"
-            src="./DSC_3953-01.jpeg"
+            src="./images/DSC_3953-01.jpeg"
             alt="Group of people Chilling"
           />
         </div>
@@ -80,17 +80,17 @@ function About() {
           <div className="lg:flex items-center w-full lg:w-1/2 ">
             <img
               className="lg:block hidden w-full rounded-lg"
-              src="./DSC_3909-01.jpeg"
+              src="./images/DSC_3909-01.jpeg"
               alt="people discussing on board"
             />
             <img
               className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-              src="./DSC_3909-01.jpeg"
+              src="./images/DSC_3909-01.jpeg"
               alt="people discussing on board"
             />
             <img
               className="sm:hidden block w-full rounded-lg"
-              src="./DSC_3909-01.jpeg"
+              src="./images/DSC_3909-01.jpeg"
               alt="people discussing on board"
             />
           </div>
@@ -100,17 +100,17 @@ function About() {
           <div className="lg:flex items-center w-full lg:w-1/2">
             <img
               className="lg:block hidden w-full rounded-lg"
-              src="./photo.png"
+              src="./images/photo.png"
               alt="people discussing on board"
             />
             <img
               className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-              src="./photo.png"
+              src="./images/photo.png"
               alt="people discussing on board"
             />
             <img
               className="sm:hidden block w-full rounded-lg"
-              src="./photo.png"
+              src="./images/photo.png"
               alt="people discussing on board"
             />
           </div>

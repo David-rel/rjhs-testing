@@ -10,7 +10,7 @@ const SearchBar = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/events.json')
+        const response = await fetch('/json/events.json')
         const data = await response.json()
         setEvents(data.Events)
         setKeys(data.Keys)

@@ -35,7 +35,7 @@ function Build() {
               </p>
               <div className="w-full">
                 <img
-                  src="/IMG_4001.jpg"
+                  src="/images/IMG_4001.jpg"
                   alt="Purple flowers on a book"
                   className="md:w-full sm:w-1/2 w-full"
                 />
@@ -58,7 +58,6 @@ function Build() {
           </div>
         </div>
       </>
-
     </div>
   )
 }

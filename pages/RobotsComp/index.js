@@ -22,7 +22,7 @@ function RobotsComp() {
           {/* 2020 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img className="rounded-t-lg" src="2020.png" alt="" />
+              <img className="rounded-t-lg" src="images/2020.png" alt="" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">
@@ -35,7 +35,7 @@ function RobotsComp() {
           {/* 2022 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img className="rounded-t-lg" src="2021.png" alt="" />
+              <img className="rounded-t-lg" src="images/2021.png" alt="" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">
@@ -48,7 +48,11 @@ function RobotsComp() {
           {/* 2023 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img className="rounded-t-lg" src="2023.jpeg" alt="Coming soon" />
+              <img
+                className="rounded-t-lg"
+                src="images/2023.jpeg"
+                alt="Coming soon"
+              />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">
@@ -61,7 +65,7 @@ function RobotsComp() {
           {/* 2016 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img className="rounded-t-lg" src="2016.png" alt="" />
+              <img className="rounded-t-lg" src="images/2016.png" alt="" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">
@@ -74,11 +78,7 @@ function RobotsComp() {
           {/* 2019 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img
-                className="rounded-t-lg"
-                src="              2019.png"
-                alt=""
-              />
+              <img className="rounded-t-lg" src="images/2019.png" alt="" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">
@@ -91,7 +91,7 @@ function RobotsComp() {
           {/* 2017 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img className="rounded-t-lg" src="2017.png" alt="" />
+              <img className="rounded-t-lg" src="images/2017.png" alt="" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">
@@ -104,7 +104,7 @@ function RobotsComp() {
           {/* 2018 Robot */}
           <div className="rounded-lg shadow-lg bg-white max-w-sm">
             <a href="#!">
-              <img className="rounded-t-lg" src="2018.png" alt="" />
+              <img className="rounded-t-lg" src="images/2018.png" alt="" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-medium mb-2">

@@ -1,20 +1,13 @@
-import { useState } from 'react'
-import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
-import {
-  MainContainer,
-  ChatContainer,
-  MessageList,
-  Message,
-  MessageInput,
-  TypingIndicator
-} from '@chatscope/chat-ui-kit-react'
-import { useRouter } from 'next/router'
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { IoSend } from 'react-icons/io5'
+
 
 const systemMessage = {
   role: 'system',
   content:
-    'Your are a tutor for Java and the package WPILib, and javascript and Next.JS, Tailwind CSS, and Azure DB. Only hve a happy attitude when talking. Do not answer any other questions apart from WPILib, java, jaavscript, Next.JS, tailwind css, Azure Cloud DB'
-}
+    'Your are a tutor for Java and the package WPILib, and javascript and Next.JS, Tailwind CSS, and Azure DB. Only have a happy attitude when talking. Do not answer any other questions apart from WPILib, java, jaavscript, Next.JS, tailwind css, Azure Cloud DB'
+};
 
 function App() {
   const router = useRouter()
@@ -46,7 +39,6 @@ function App() {
   }
 
   async function processMessageToChatGPT(chatMessages) {
-    
     let apiMessages = chatMessages.map(messageObject => {
       let role = ''
       if (messageObject.sender === 'ChatGPT') {
@@ -81,45 +73,88 @@ function App() {
       })
       .then(data => {
         console.log(data)
-        setMessages([
-          ...chatMessages,
-          {
-            message: data.choices[0].message.content,
-            sender: 'ChatGPT'
-          }
-        ])
+
+        // Check if the API response has the expected structure
+        if (
+          data.choices &&
+          data.choices[0] &&
+          data.choices[0].message &&
+          data.choices[0].message.content
+        ) {
+          setMessages([
+            ...chatMessages,
+            {
+              message: data.choices[0].message.content,
+              sender: 'ChatGPT'
+            }
+          ])
+        } else {
+          console.error('Unexpected API response:', data)
+        }
+
         setIsTyping(false)
       })
   }
 
+
   return (
-    <div className="App h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-full h-screen max-w-4xl">
-        <MainContainer>
-          <ChatContainer>
-            <MessageList
-              className="h-[calc(100%-3.5rem)]"
-              scrollBehavior="smooth"
-              typingIndicator={
-                isTyping ? (
-                  <TypingIndicator content="RaiderBot is typing" />
-                ) : null
-              }
+    <div className="h-screen flex items-center justify-center bg-red-400">
+      <div className="w-full h-full max-w-4xl p-4">
+        <div className="bg-white h-full rounded-xl shadow-lg flex flex-col">
+          <div className="flex-grow overflow-y-auto p-4">
+            {messages.map((message, i) => (
+              <div
+                key={i}
+                className={`my-2 ${
+                  message.sender === 'ChatGPT'
+                    ? 'text-left text-red-700'
+                    : 'text-right text-white'
+                }`}
+              >
+                <div
+                  className={`rounded-lg py-2 px-4 ${
+                    message.sender === 'ChatGPT' ? 'bg-red-200' : 'bg-red-600'
+                  }`}
+                >
+                  {message.message}
+                </div>
+              </div>
+            ))}
+            {isTyping && (
+              <div className="text-left text-red-700">
+                <div className="rounded-lg bg-red-200 py-2 px-4">
+                  RaiderBot is typing...
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="border-t border-red-300">
+            <form
+              onSubmit={e => {
+                e.preventDefault()
+                handleSend(e.target.message.value)
+                e.target.message.value = ''
+              }}
+              className="p-4 flex"
             >
-              {messages.map((message, i) => {
-                console.log(message)
-                return <Message key={i} model={message} />
-              })}
-            </MessageList>
-            <MessageInput
-              className="bottom-0"
-              placeholder="Type message here"
-              onSend={handleSend}
-            />
-          </ChatContainer>
-        </MainContainer>
+              <input
+                name="message"
+                type="text"
+                className="w-full rounded-l-lg border-red-300 bg-white focus:border-red-500 focus:ring-0 text-red-700 p-2 outline-none"
+                placeholder="Type message here"
+              />
+              <button
+                type="submit"
+                className="bg-red-600 text-white rounded-r-lg p-2"
+              >
+                <IoSend className="text-xl" />
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   )
+
 }
 export default App

@@ -37,7 +37,7 @@ function Programming() {
               </p>
               <div className="w-full">
                 <img
-                  src="/cocde.png"
+                  src="/images/cocde.png"
                   alt="Purple flowers on a book"
                   className="md:w-full sm:w-1/2 w-full"
                 />
@@ -106,7 +106,7 @@ function Programming() {
             <div className="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 bg-gray-800">
               <div>
                 {/* <Image src=''  width={500} height={50}/> */}
-                <img src="/WPILibDev.png" />
+                <img src="/images/WPILibDev.png" />
               </div>{' '}
             </div>
             <div
@@ -149,7 +149,7 @@ function Programming() {
             </div>
             <div className="w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0 bg-gray-800">
               <div>
-                <img class="h-full" src="/1.png" alt="Sample Image" />
+                <img class="h-full" src="/images/1.png" alt="Sample Image" />
               </div>{' '}
             </div>
           </div>
@@ -174,7 +174,7 @@ function Programming() {
               <p class="text-gray-400 p-12"></p>
             </div>
             <div class="w-9/12">
-              <img class="h-full" src="/1.png" alt="Sample Image" />
+              <img class="h-full" src="/images/1.png" alt="Sample Image" />
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ function Programming() {
               <p class="text-gray-400 p-12"> </p>
             </div>
             <div class="w-9/12">
-              <img class="h-full" src="/2.png" alt="Sample Image" />
+              <img class="h-full" src="/images/2.png" alt="Sample Image" />
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@ function Programming() {
               <p class="text-gray-400 p-12"> </p>
             </div>
             <div class="w-9/12">
-              <img class="h-full" src="/3.png" alt="Sample Image" />
+              <img class="h-full" src="/images/3.png" alt="Sample Image" />
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ function Programming() {
               <p class="text-gray-400 p-12"> </p>
             </div>
             <div class="w-9/12">
-              <img class="h-full" src="/4.png" alt="Sample Image" />
+              <img class="h-full" src="/images/4.png" alt="Sample Image" />
             </div>
           </div>
         </div>
@@ -245,7 +245,7 @@ function Programming() {
               <p class="text-gray-400 p-12"> </p>
             </div>
             <div class="w-9/12">
-              <img class="h-full" src="/5.png" alt="Sample Image" />
+              <img class="h-full" src="/images/5.png" alt="Sample Image" />
             </div>
           </div>
         </div>
@@ -269,7 +269,6 @@ function Programming() {
           </section>
         </div>
       </div>
-
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import ChatPopup from '../components/ChatPopup'
 
 export default function Index() {
 
@@ -11,13 +12,13 @@ export default function Index() {
 
   return (
     <div>
-    
+      <ChatPopup />
       <div className="bg-gray-800">
         <h1 className="text-4xl bg-white">
           Please "git pull" before working on code
         </h1>
         <div className="">
-          <section class="relative bg-[url(../public/DSC_3898-01.jpeg)] bg-cover bg-center bg-no-repeat">
+          <section class="relative bg-[url(../public/images/DSC_3898-01.jpeg)] bg-cover bg-center bg-no-repeat">
             <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -53,7 +54,7 @@ export default function Index() {
                     role="img"
                     aria-label="people smiling"
                     className="mx-auto w-full"
-                    src="./DSC_4026-01.jpeg"
+                    src="./images/DSC_4026-01.jpeg"
                     alt="people smiling"
                   />
                 </div>
@@ -115,7 +116,7 @@ export default function Index() {
 
                 <div className="md:pr-4 py-4">
                   <img
-                    src="./DSC_4032-01.jpeg"
+                    src="./images/DSC_4032-01.jpeg"
                     alt="img"
                     className="w-full h-full object-cover rounded-lg "
                   />
@@ -131,7 +132,7 @@ export default function Index() {
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
             >
-              <img class="rounded-t-lg" src="./IMG_7814.JPG" alt="" />
+              <img class="rounded-t-lg" src="./images/IMG_7814.JPG" alt="" />
             </Link>
             <div class="p-6">
               <h5 class="text-gray-900 text-xl font-medium mb-2">

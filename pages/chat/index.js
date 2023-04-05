@@ -22,7 +22,7 @@ const InputPage = () => {
             value={inputValue || ''}
             onChange={e => setInputValue(e.target.value)}
           />
-          <Link href={`/chat/main?key=${inputValue || 'none'}`}>
+          <Link href={`/Chat/main?key=${inputValue || 'none'}`}>
             <button className="mt-6 bg-gradient-to-r from-red-400 to-white text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:from-cyan-500 hover:to-light-blue-600 transition-colors duration-300">
               Submit
             </button>

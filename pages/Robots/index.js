@@ -21,7 +21,7 @@ function Robots() {
           {/* Robot 1 */}
           <div className="rounded-lg shadow-lg bg-white">
             <a href="#!">
-              <img className="rounded-t-lg" src="smll.png" alt="" />
+              <img className="rounded-t-lg" src="images/smll.png" alt="" />
             </a>
 
             <div className="p-6">
@@ -40,7 +40,7 @@ function Robots() {
           {/* Robot 2 */}
           <div className="rounded-lg shadow-lg bg-white">
             <a href="#!">
-              <img className="rounded-t-lg" src="shirt.png" alt="" />
+              <img className="rounded-t-lg" src="images/shirt.png" alt="" />
             </a>
 
             <div className="p-6">
@@ -59,7 +59,7 @@ function Robots() {
           {/* Robot 3 */}
           <div className="rounded-lg shadow-lg bg-white">
             <a href="#!">
-              <img className="rounded-t-lg" src="swerve.png" alt="" />
+              <img className="rounded-t-lg" src="images/swerve.png" alt="" />
             </a>
 
             <div className="p-6">
@@ -79,7 +79,7 @@ function Robots() {
           {/* Robot 4 */}
           <div className="rounded-lg shadow-lg bg-white">
             <a href="#!">
-              <img className="rounded-t-lg" src="dig.png" alt="" />
+              <img className="rounded-t-lg" src="images/dig.png" alt="" />
             </a>
 
             <div className="p-6">
@@ -99,7 +99,7 @@ function Robots() {
           {/* Robot 5 */}
           <div className="rounded-lg shadow-lg bg-white">
             <a href="#!">
-              <img className="rounded-t-lg" src="tables.png" alt="" />
+              <img className="rounded-t-lg" src="images/tables.png" alt="" />
             </a>
 
             <div className="p-6">

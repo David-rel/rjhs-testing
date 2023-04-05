@@ -4,7 +4,7 @@ import React from 'react'
 function Sponsors() {
   return (
     <div>
-      <section class="relative bg-[url(../public/DSC_3014-01.jpeg)] bg-cover bg-center bg-no-repeat">
+      <section class="relative bg-[url(../public/images/DSC_3014-01.jpeg)] bg-cover bg-center bg-no-repeat">
         <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">

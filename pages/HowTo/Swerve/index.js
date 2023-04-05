@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Swerve() {
   return (
     <>
-      <section class="relative bg-[url(../public/IMG_4001.jpg)] bg-cover bg-center bg-no-repeat">
+      <section class="relative bg-[url(../public/images/IMG_4001.jpg)] bg-cover bg-center bg-no-repeat">
         <div class="absolute inset-0 bg-gray-800 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -71,17 +71,17 @@ function Swerve() {
                 <div className="lg:flex items-center w-full lg:w-1/2 ">
                   <img
                     className="lg:block hidden w-full rounded-lg"
-                    src="/IMG_4019.jpg"
+                    src="/images/IMG_4019.jpg"
                     alt="people discussing on board"
                   />
                   <img
                     className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-                    src="/IMG_4019.jpg"
+                    src="/images/IMG_4019.jpg"
                     alt="people discussing on board"
                   />
                   <img
                     className="sm:hidden block w-full rounded-lg"
-                    src="/IMG_4019.jpg"
+                    src="/images/IMG_4019.jpg"
                     alt="people discussing on board"
                   />
                 </div>
@@ -91,17 +91,17 @@ function Swerve() {
                 <div className="lg:flex items-center w-full lg:w-1/2">
                   <img
                     className="lg:block hidden w-full rounded-lg"
-                    src="/IMG_3998.jpg"
+                    src="/images/IMG_3998.jpg"
                     alt="people discussing on board"
                   />
                   <img
                     className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-                    src="/IMG_3998.jpg"
+                    src="/images/IMG_3998.jpg"
                     alt="people discussing on board"
                   />
                   <img
                     className="sm:hidden block w-full rounded-lg"
-                    src="/IMG_3998.jpg"
+                    src="/images/IMG_3998.jpg"
                     alt="people discussing on board"
                   />
                 </div>
