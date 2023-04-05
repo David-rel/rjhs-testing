@@ -5,6 +5,7 @@ import  React, { useState } from 'react'
 import NavBar from '../components/navbar'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Head from 'next/head'
 
 
 function MyApp({ Component, pageProps }) {
@@ -13,6 +14,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <SessionContextProvider supabaseClient={supabase}>
+      <Head>
+        <title>Team Structure</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="./static/favicon.ico" />
+      </Head>
       <Header />
       <NavBar />
       <Component {...pageProps} />

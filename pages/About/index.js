@@ -1,11 +1,13 @@
 import React from 'react'
 import { useUser } from '@supabase/auth-helpers-react'
+import ChatPopup from '../../components/ChatPopup'
 
 function About() {
   const user = useUser()
 
   return (
     <div className="bg-gray-800">
+      <ChatPopup />
       <div className="2xl:container 2xl:mx-auto lg:py-12 lg:px-20 md:py-12 md:px-6 py-9 px-4 bg-gray-800">
         <div className="w-full text-center">
           <h2 className="w-full font-bold text-white lg:text-6xl text-3xl lg:leading-10 leading-9 mt-2">
