@@ -10,7 +10,7 @@ function footer() {
           <div className="mx-auto container flex flex-col items-center justify-center">
             <div>
               <Image
-                src={'/download.jpeg'}
+                src={'/images/download.jpeg'}
                 alt="Home Page"
                 className="rounded-lg"
                 width={175}

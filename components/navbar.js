@@ -138,7 +138,7 @@ const path = router.asPath
                     Calendar
                   </a>
                 </Link>
-                <Link href="/Chat" legacyBehavior>
+                <Link href="/chat" legacyBehavior>
                   <a className="text-white px-3 py-2 rounded-md text-sm font-medium">
                     ChatBot (alpha)
                   </a>
@@ -246,9 +246,9 @@ const path = router.asPath
                 Calendar
               </a>
             </Link>
-            <Link href="/Chat" legacyBehavior>
+            <Link href="/chat" legacyBehavior>
               <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
-                Calendar
+                ChatBot (alpha)
               </a>
             </Link>
           </div>
