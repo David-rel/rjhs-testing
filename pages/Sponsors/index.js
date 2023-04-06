@@ -1,9 +1,11 @@
 import React from 'react'
+import ChatPopup from '../../components/ChatPopup'
 
 
 function Sponsors() {
   return (
     <div>
+      <ChatPopup />
       <section class="relative bg-[url(../public/images/DSC_3014-01.jpeg)] bg-cover bg-center bg-no-repeat">
         <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 

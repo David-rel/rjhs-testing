@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
+import ChatPopup from '../../components/ChatPopup'
 
 export default function TeamStructure() {
   const [screenWidth, setScreenWidth] = useState(null)
@@ -87,22 +88,23 @@ function TeamMember({ member, screenWidth }) {
     screenWidth >= 1280 ? 'h-96' : screenWidth >= 768 ? 'h-80' : 'h-96'
 
   return (
-    <div
-      className={`relative ${cardWidth} ${cardHeight} rounded-lg overflow-hidden shadow-lg`}
-    >
-      <Image
-        src={member.imageUrl}
-        alt={member.name}
-        layout="fill"
-        objectFit="cover"
-      />
+      <div
+        className={`relative ${cardWidth} ${cardHeight} rounded-lg overflow-hidden shadow-lg`}
+      >
+        < ChatPopup />
+        <Image
+          src={member.imageUrl}
+          alt={member.name}
+          layout="fill"
+          objectFit="cover"
+        />
 
-      <div className="absolute bottom-0 w-full bg-white opacity-90">
-        <div className="p-4">
-          <h3 className="text-xl font-semibold">{member.name}</h3>
-          <p className="text-sm mt-2">{member.description}</p>
+        <div className="absolute bottom-0 w-full bg-white opacity-90">
+          <div className="p-4">
+            <h3 className="text-xl font-semibold">{member.name}</h3>
+            <p className="text-sm mt-2">{member.description}</p>
+          </div>
         </div>
       </div>
-    </div>
   )
 }

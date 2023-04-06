@@ -30,6 +30,7 @@ const path = router.asPath
  const closeDropdowns = () => {
    setIsDropdownOpen(false)
    setIsDropdownOpenAbout(false)
+   setIsMenuOpen(false)
  }
  
 
@@ -193,13 +194,19 @@ const path = router.asPath
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link href="/" legacyBehavior>
-              <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+              <a
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                onClick={closeDropdowns}
+              >
                 Home
               </a>
             </Link>
 
             <Link href="/Contact" legacyBehavior>
-              <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+              <a
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                onClick={closeDropdowns}
+              >
                 Contact
               </a>
             </Link>
@@ -273,17 +280,26 @@ const path = router.asPath
               </div>
             )}
             <Link href="/HowTo" legacyBehavior>
-              <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+              <a
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                onClick={closeDropdowns}
+              >
                 Creation Process
               </a>
             </Link>
             <Link href="/TeamResources" legacyBehavior>
-              <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+              <a
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                onClick={closeDropdowns}
+              >
                 Team Resources
               </a>
             </Link>
             <Link href="/Calendar" legacyBehavior>
-              <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+              <a
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                onClick={closeDropdowns}
+              >
                 Calendar
               </a>
             </Link>
