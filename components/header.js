@@ -31,7 +31,7 @@ const Header = () => {
             height={100}
           />
           <h1 className="text-xl font-bold hidden sm:block text-white">
-            <Link href="https://www.regisjesuit.com/">RJ Robotics 3729</Link>
+            <Link href="https://www.regisjesuit.com/">RJHS Robotics 3729</Link>
           </h1>
 
           <p className="ml-4 text-sm hidden md:block text-white">

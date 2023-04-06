@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
+import { FaRobot } from 'react-icons/fa' 
 
 export default function Sidebar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -164,6 +165,15 @@ export default function Sidebar() {
                   <line x1={14} y1={4} x2={10} y2={20} />
                 </svg>
                 <span className="ml-2">Learning</span>
+              </div>
+            </li>
+          </Link>
+          <Link href="/TeamResources/Chat">
+            <li className="p-4">
+              {' '}
+              <div className="flex items-center">
+                <FaRobot size="1.25em" />
+                <span className="ml-2">ChatBot(alpha)</span>
               </div>
             </li>
           </Link>

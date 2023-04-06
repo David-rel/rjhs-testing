@@ -38,10 +38,39 @@ const teamMembers = [
   // Example:
   // ... (continue from previous code snippet)
   {
-    name: 'John Doe',
-    imageUrl: '/images/john-doe.jpg',
-    description:
-      'John Doe is the CE and founder of the companyd founder of the companyd founder of the companyd founder of the companyd founder of the companyd founder of the companyd founder of the company.'
+    name: 'Build',
+    imageUrl: '/images/IMG_7949.JPG',
+    description: 'Builds the robot, including the chassis, manipulator, and other mechanisms. They also work on the robot’s bumpers and other safety features. They also build out the game pieces.'
+  },
+  {
+    name: 'Electrical',
+    imageUrl: '/images/IMG_7812.JPG',
+    description: 'Assembles and wires the robots electrical and pneumatic systems. They also work on the robot’s control system, which includes the radio, roboRIO, and motor controllers.'
+  },
+  { 
+    name: 'Programming',
+    imageUrl: '/images/IMG_3987.jpg',
+    description: 'Programming the robot is an annual task, which includes autonomous code and advanced vision systems to make drive teams job as easy as possible.'
+  },
+  {
+    name: 'CAD',
+    imageUrl: '/images/IMG_7824.JPG',
+    description: 'Using OnShape modeling software, the Hardware Design team CADs the robot each year to design each iteration of our competition robot.'
+  },
+  {
+    name: 'Strategy',
+    imageUrl: '/images/IMG_3999.JPG',
+    description: 'From kickoff to alliance selection, strategy is the mastermind behind how the game works and who our allies will be.'
+  },
+  {
+    name: 'Drive',
+    imageUrl: '/images/IMG_7835.JPG',
+    description: 'The drive team is responsible for driving the robot during matches making sure that they understand the rules and can communicate with the rest of the team.'
+  },
+  {
+    name: 'Skunkworks',
+    imageUrl: '/images/IMG_7808.JPG',
+    description: 'Skunkworks is the summer team that works on the robot during the off-season. They also work on outreach and other projects that the team is working on.'
   }
 ]
 

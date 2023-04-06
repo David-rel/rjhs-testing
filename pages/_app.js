@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <SessionContextProvider supabaseClient={supabase}>
       <Head>
-        <title>Team Structure</title>
+        <title>RJHS Robotics 3729</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="./static/favicon.ico" />
       </Head>

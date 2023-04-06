@@ -21,7 +21,7 @@ export default function Home() {
     },
     {
       title: 'CAD',
-      imageUrl: '/IMG_7824.JPG',
+      imageUrl: '/images/IMG_7824.JPG',
       url: '/images/TeamResources/Learning/CAD'
     }
   ]

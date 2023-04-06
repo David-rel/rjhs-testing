@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { IoSend } from 'react-icons/io5'
+import Sidebar from '../../../../components/sidebar';
 
 
 const systemMessage = {
@@ -98,14 +99,15 @@ function App() {
 
 
   return (
-    <div className="h-screen flex items-center justify-center bg-red-400">
-      <div className="w-full h-full max-w-4xl p-4">
-        <div className="bg-white h-full rounded-xl shadow-lg flex flex-col">
-          <div className="flex-grow overflow-y-auto p-4">
+    <div className="flex h-screen">
+      <Sidebar />
+      <div className="flex items-center justify-center bg-red-400 w-full">
+        <div className="w-full h-full max-w-4xl p-4 pb-20">
+          <div className="bg-white h-full rounded-xl shadow-lg flex flex-col">
             {messages.map((message, i) => (
               <div
                 key={i}
-                className={`my-2 ${
+                className={`my-2 mx-4 ${
                   message.sender === 'ChatGPT'
                     ? 'text-left text-red-700'
                     : 'text-right text-white'

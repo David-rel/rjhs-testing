@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import SearchBar from './searchbar'
@@ -8,8 +8,30 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [isDropdownOpenAbout, setIsDropdownOpenAbout] = useState(false)
   const router = useRouter()
+    const navRef = useRef(null)
+
+     const handleClickOutside = event => {
+       if (navRef.current && !navRef.current.contains(event.target)) {
+         closeDropdowns()
+       }
+     }
+
+     useEffect(() => {
+       document.addEventListener('mousedown', handleClickOutside)
+
+       return () => {
+         document.removeEventListener('mousedown', handleClickOutside)
+       }
+     }, [])
+
 
 const path = router.asPath
+
+ const closeDropdowns = () => {
+   setIsDropdownOpen(false)
+   setIsDropdownOpenAbout(false)
+ }
+ 
 
 
 
@@ -23,7 +45,7 @@ const path = router.asPath
 
 
   return (
-    <nav className="bg-gray-700">
+    <nav className="bg-gray-700" ref={navRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -54,6 +76,7 @@ const path = router.asPath
                       <div className="py-1" role="menu">
                         <Link href="/Robots" legacyBehavior>
                           <a
+                            onClick={closeDropdowns}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-300"
                             role="menuitem"
                           >
@@ -62,6 +85,7 @@ const path = router.asPath
                         </Link>
                         <Link href="/RobotsComp" legacyBehavior>
                           <a
+                            onClick={closeDropdowns}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-300"
                             role="menuitem"
                           >
@@ -89,6 +113,7 @@ const path = router.asPath
                       <div className="py-1" role="menu">
                         <Link href="/About" legacyBehavior>
                           <a
+                            onClick={closeDropdowns}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-300"
                             role="menuitem"
                           >
@@ -97,6 +122,7 @@ const path = router.asPath
                         </Link>
                         <Link href="/FIRST" legacyBehavior>
                           <a
+                            onClick={closeDropdowns}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-300"
                             role="menuitem"
                           >
@@ -105,6 +131,7 @@ const path = router.asPath
                         </Link>
                         <Link href="/Sponsors" legacyBehavior>
                           <a
+                            onClick={closeDropdowns}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-300"
                             role="menuitem"
                           >
@@ -113,6 +140,7 @@ const path = router.asPath
                         </Link>
                         <Link href="/TeamStructure" legacyBehavior>
                           <a
+                            onClick={closeDropdowns}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-300"
                             role="menuitem"
                           >
@@ -136,11 +164,6 @@ const path = router.asPath
                 <Link href="/Calendar" legacyBehavior>
                   <a className="text-white px-3 py-2 rounded-md text-sm font-medium">
                     Calendar
-                  </a>
-                </Link>
-                <Link href="/chat" legacyBehavior>
-                  <a className="text-white px-3 py-2 rounded-md text-sm font-medium">
-                    ChatBot (alpha)
                   </a>
                 </Link>
               </div>
@@ -189,22 +212,34 @@ const path = router.asPath
             {isDropdownOpenAbout && (
               <div className="pt-2 pb-3 space-y-1">
                 <Link href="/About" legacyBehavior>
-                  <a className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+                  <a
+                    onClick={closeDropdowns}
+                    className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                  >
                     About
                   </a>
                 </Link>
                 <Link href="/FIRST" legacyBehavior>
-                  <a className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+                  <a
+                    onClick={closeDropdowns}
+                    className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                  >
                     FIRST
                   </a>
                 </Link>
                 <Link href="/Sponsors" legacyBehavior>
-                  <a className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+                  <a
+                    onClick={closeDropdowns}
+                    className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                  >
                     Sponsors
                   </a>
                 </Link>
                 <Link href="/TeamStructure" legacyBehavior>
-                  <a className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+                  <a
+                    onClick={closeDropdowns}
+                    className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                  >
                     Team Structure
                   </a>
                 </Link>
@@ -220,12 +255,18 @@ const path = router.asPath
             {isDropdownOpen && (
               <div className="pt-2 pb-3 space-y-1">
                 <Link href="/Robots" legacyBehavior>
-                  <a className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+                  <a
+                    onClick={closeDropdowns}
+                    className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                  >
                     School Robots
                   </a>
                 </Link>
                 <Link href="/RobotsComp" legacyBehavior>
-                  <a className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
+                  <a
+                    onClick={closeDropdowns}
+                    className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                  >
                     Competition Robots
                   </a>
                 </Link>
@@ -244,11 +285,6 @@ const path = router.asPath
             <Link href="/Calendar" legacyBehavior>
               <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
                 Calendar
-              </a>
-            </Link>
-            <Link href="/chat" legacyBehavior>
-              <a className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-300">
-                ChatBot (alpha)
               </a>
             </Link>
           </div>

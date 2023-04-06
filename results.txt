@@ -1,0 +1,182 @@
+Date : 2023-04-05 17:40:49
+Directory : /Users/davidfales/Downloads/robotics-webpage-test
+Total : 90 files,  35950 codes, 332 comments, 1076 blanks, all 37358 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          6 |     24,304 |          0 |         10 |     24,314 |
+| JavaScript         |         77 |     11,447 |        327 |        987 |     12,761 |
+| HTML               |          1 |         82 |          0 |         23 |        105 |
+| Markdown           |          1 |         61 |          0 |         50 |        111 |
+| JSON with Comments |          1 |         20 |          0 |          1 |         21 |
+| Ignore             |          1 |         19 |          0 |          0 |         19 |
+| TypeScript         |          1 |         10 |          1 |          3 |         14 |
+| XML                |          1 |          4 |          0 |          0 |          4 |
+| CSS                |          1 |          3 |          4 |          2 |          9 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                 | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                    |         90 |     35,950 |        332 |      1,076 |     37,358 |
+| . (Files)                                                                                            |         12 |     16,211 |          2 |         88 |     16,301 |
+| _old                                                                                                 |         10 |      2,833 |         30 |        220 |      3,083 |
+| _old/Scouter                                                                                         |         10 |      2,833 |         30 |        220 |      3,083 |
+| _old/Scouter (Files)                                                                                 |          1 |        148 |          2 |         19 |        169 |
+| _old/Scouter/DeeperScouter                                                                           |          1 |        260 |          6 |         18 |        284 |
+| _old/Scouter/Matches                                                                                 |          1 |         66 |          2 |         11 |         79 |
+| _old/Scouter/PreScout                                                                                |          3 |        775 |          0 |         45 |        820 |
+| _old/Scouter/PreScout (Files)                                                                        |          1 |         95 |          0 |          8 |        103 |
+| _old/Scouter/PreScout/Create                                                                         |          1 |        634 |          0 |         28 |        662 |
+| _old/Scouter/PreScout/Edit                                                                           |          1 |         46 |          0 |          9 |         55 |
+| _old/Scouter/Scout                                                                                   |          4 |      1,584 |         20 |        127 |      1,731 |
+| _old/Scouter/Scout (Files)                                                                           |          1 |        175 |          0 |          9 |        184 |
+| _old/Scouter/Scout/Create                                                                            |          1 |      1,284 |         20 |         96 |      1,400 |
+| _old/Scouter/Scout/Edit                                                                              |          1 |         46 |          0 |          9 |         55 |
+| _old/Scouter/Scout/Team                                                                              |          1 |         79 |          0 |         13 |         92 |
+| components                                                                                           |         28 |      4,912 |         69 |        403 |      5,384 |
+| demo-data                                                                                            |          1 |          9 |          0 |          0 |          9 |
+| pages                                                                                                |         35 |      3,668 |        227 |        357 |      4,252 |
+| pages (Files)                                                                                        |          2 |        175 |          0 |         17 |        192 |
+| pages/About                                                                                          |          1 |        134 |          0 |          8 |        142 |
+| pages/Calendar                                                                                       |          2 |        360 |         89 |         38 |        487 |
+| pages/Contact                                                                                        |          1 |        246 |          0 |          7 |        253 |
+| pages/FIRST                                                                                          |          1 |        114 |          0 |         10 |        124 |
+| pages/HowTo                                                                                          |          7 |        989 |         50 |         65 |      1,104 |
+| pages/HowTo (Files)                                                                                  |          1 |         48 |         41 |          9 |         98 |
+| pages/HowTo/Swerve                                                                                   |          6 |        941 |          9 |         56 |      1,006 |
+| pages/HowTo/Swerve (Files)                                                                           |          1 |        199 |          0 |         10 |        209 |
+| pages/HowTo/Swerve/Build                                                                             |          1 |         62 |          0 |          4 |         66 |
+| pages/HowTo/Swerve/CAD                                                                               |          1 |        291 |          9 |         19 |        319 |
+| pages/HowTo/Swerve/Electrical                                                                        |          1 |         64 |          0 |          4 |         68 |
+| pages/HowTo/Swerve/Programming                                                                       |          1 |        262 |          0 |         15 |        277 |
+| pages/HowTo/Swerve/Test                                                                              |          1 |         63 |          0 |          4 |         67 |
+| pages/Login                                                                                          |          1 |        103 |          8 |          7 |        118 |
+| pages/Robots                                                                                         |          1 |        103 |          0 |         23 |        126 |
+| pages/RobotsComp                                                                                     |          1 |        114 |          0 |         10 |        124 |
+| pages/Signup                                                                                         |          1 |         15 |         61 |          6 |         82 |
+| pages/Sponsors                                                                                       |          1 |         25 |          0 |          6 |         31 |
+| pages/TeamResources                                                                                  |         11 |      1,018 |          6 |        110 |      1,134 |
+| pages/TeamResources (Files)                                                                          |          1 |        429 |          0 |         32 |        461 |
+| pages/TeamResources/Learning                                                                         |          5 |         80 |          0 |         12 |         92 |
+| pages/TeamResources/Learning (Files)                                                                 |          1 |         54 |          0 |          4 |         58 |
+| pages/TeamResources/Learning/Build                                                                   |          1 |          7 |          0 |          2 |          9 |
+| pages/TeamResources/Learning/CAD                                                                     |          1 |          7 |          0 |          2 |          9 |
+| pages/TeamResources/Learning/Electrical                                                              |          1 |          7 |          0 |          2 |          9 |
+| pages/TeamResources/Learning/Programming                                                             |          1 |          5 |          0 |          2 |          7 |
+| pages/TeamResources/Project                                                                          |          1 |        296 |          1 |         27 |        324 |
+| pages/TeamResources/Scouter                                                                          |          4 |        213 |          5 |         39 |        257 |
+| pages/TeamResources/Scouter (Files)                                                                  |          1 |         65 |          0 |          6 |         71 |
+| pages/TeamResources/Scouter/CurrentEvents                                                            |          1 |         10 |          0 |          5 |         15 |
+| pages/TeamResources/Scouter/PastEvents                                                               |          1 |        128 |          5 |         23 |        156 |
+| pages/TeamResources/Scouter/Team                                                                     |          1 |         10 |          0 |          5 |         15 |
+| pages/TeamStructure                                                                                  |          1 |         65 |          3 |         12 |         80 |
+| pages/api                                                                                            |          2 |         35 |          8 |         12 |         55 |
+| pages/chat                                                                                           |          2 |        172 |          2 |         26 |        200 |
+| pages/chat (Files)                                                                                   |          1 |         31 |          1 |          7 |         39 |
+| pages/chat/main                                                                                      |          1 |        141 |          1 |         19 |        161 |
+| public                                                                                               |          3 |      8,314 |          0 |          6 |      8,320 |
+| public/json                                                                                          |          2 |      8,310 |          0 |          6 |      8,316 |
+| public/static                                                                                        |          1 |          4 |          0 |          0 |          4 |
+| styles                                                                                               |          1 |          3 |          4 |          2 |          9 |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                             | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/davidfales/Downloads/robotics-webpage-test/.eslintrc.json                                     | JSON               |          4 |          0 |          1 |          5 |
+| /Users/davidfales/Downloads/robotics-webpage-test/.prettierignore                                    | Ignore             |         19 |          0 |          0 |         19 |
+| /Users/davidfales/Downloads/robotics-webpage-test/.prettierrc                                        | JSON               |          6 |          0 |          1 |          7 |
+| /Users/davidfales/Downloads/robotics-webpage-test/README.md                                          | Markdown           |         61 |          0 |         50 |        111 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/DeeperScouter/index.js                | JavaScript         |        260 |          6 |         18 |        284 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/Matches/index.js                      | JavaScript         |         66 |          2 |         11 |         79 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/PreScout/Create/index.js              | JavaScript         |        634 |          0 |         28 |        662 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/PreScout/Edit/index.js                | JavaScript         |         46 |          0 |          9 |         55 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/PreScout/index.js                     | JavaScript         |         95 |          0 |          8 |        103 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/Scout/Create/index.js                 | JavaScript         |      1,284 |         20 |         96 |      1,400 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/Scout/Edit/index.js                   | JavaScript         |         46 |          0 |          9 |         55 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/Scout/Team/index.js                   | JavaScript         |         79 |          0 |         13 |         92 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/Scout/index.js                        | JavaScript         |        175 |          0 |          9 |        184 |
+| /Users/davidfales/Downloads/robotics-webpage-test/_old/Scouter/index.js                              | JavaScript         |        148 |          2 |         19 |        169 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/AwardRanking.js                         | JavaScript         |         50 |          3 |          9 |         62 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/BuildTasks.js                           | JavaScript         |          5 |          0 |          3 |          8 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/ChatPopup.js                            | JavaScript         |        148 |          1 |         11 |        160 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/Development.js                          | JavaScript         |         16 |          0 |          3 |         19 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/EPARanking.js                           | JavaScript         |         29 |         14 |         10 |         53 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/Match.js                                | JavaScript         |        445 |          0 |         23 |        468 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/PreInfo.js                              | JavaScript         |         39 |          0 |          7 |         46 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/PreInfoKansas.js                        | JavaScript         |         39 |          0 |          7 |         46 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/PreScoutData.js                         | JavaScript         |         88 |          0 |         15 |        103 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/PreScoutEdit.js                         | JavaScript         |        545 |          0 |         30 |        575 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/PreScoutTeams.js                        | JavaScript         |         15 |          0 |          3 |         18 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/Ranking.js                              | JavaScript         |         12 |          0 |          6 |         18 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/ScoutData.js                            | JavaScript         |        148 |          0 |         20 |        168 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/ScoutEdit.js                            | JavaScript         |      1,203 |         23 |         96 |      1,322 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/ScoutTeams.js                           | JavaScript         |         16 |          0 |          3 |         19 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/SearchbarScouter.js                     | JavaScript         |         62 |          0 |         10 |         72 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/Test.js                                 | JavaScript         |        574 |         28 |         26 |        628 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/Todo.js                                 | JavaScript         |         16 |          0 |          3 |         19 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/build.js                                | JavaScript         |        170 |          0 |         15 |        185 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/cad.js                                  | JavaScript         |        170 |          0 |         15 |        185 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/electrical.js                           | JavaScript         |        169 |          0 |         14 |        183 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/footer.js                               | JavaScript         |        180 |          0 |          6 |        186 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/header.js                               | JavaScript         |         61 |          0 |         11 |         72 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/navbar.js                               | JavaScript         |        248 |          0 |         14 |        262 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/programming.js                          | JavaScript         |        170 |          0 |         15 |        185 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/searchbar.js                            | JavaScript         |         59 |          0 |         10 |         69 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/searchbarevents.js                      | JavaScript         |         64 |          0 |         13 |         77 |
+| /Users/davidfales/Downloads/robotics-webpage-test/components/sidebar.js                              | JavaScript         |        171 |          0 |          5 |        176 |
+| /Users/davidfales/Downloads/robotics-webpage-test/dbConfig.js                                        | JavaScript         |         12 |          0 |          5 |         17 |
+| /Users/davidfales/Downloads/robotics-webpage-test/demo-data/appointments.js                          | JavaScript         |          9 |          0 |          0 |          9 |
+| /Users/davidfales/Downloads/robotics-webpage-test/next.config.js                                     | JavaScript         |          3 |          1 |          1 |          5 |
+| /Users/davidfales/Downloads/robotics-webpage-test/package-lock.json                                  | JSON               |     15,921 |          0 |          1 |     15,922 |
+| /Users/davidfales/Downloads/robotics-webpage-test/package.json                                       | JSON               |         63 |          0 |          1 |         64 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/About/index.js                               | JavaScript         |        134 |          0 |          8 |        142 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/Calendar/demo.js                             | JavaScript         |        349 |         89 |         34 |        472 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/Calendar/index.js                            | JavaScript         |         11 |          0 |          4 |         15 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/Contact/index.js                             | JavaScript         |        246 |          0 |          7 |        253 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/FIRST/index.js                               | JavaScript         |        114 |          0 |         10 |        124 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/HowTo/Swerve/Build/index.js                  | JavaScript         |         62 |          0 |          4 |         66 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/HowTo/Swerve/CAD/index.js                    | JavaScript         |        291 |          9 |         19 |        319 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/HowTo/Swerve/Electrical/index.js             | JavaScript         |         64 |          0 |          4 |         68 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/HowTo/Swerve/Programming/index.js            | JavaScript         |        262 |          0 |         15 |        277 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/HowTo/Swerve/Test/index.js                   | JavaScript         |         63 |          0 |          4 |         67 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/HowTo/Swerve/index.js                        | JavaScript         |        199 |          0 |         10 |        209 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/HowTo/index.js                               | JavaScript         |         48 |         41 |          9 |         98 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/Login/index.js                               | JavaScript         |        103 |          8 |          7 |        118 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/Robots/index.js                              | JavaScript         |        103 |          0 |         23 |        126 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/RobotsComp/index.js                          | JavaScript         |        114 |          0 |         10 |        124 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/Signup/index.js                              | JavaScript         |         15 |         61 |          6 |         82 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/Sponsors/index.js                            | JavaScript         |         25 |          0 |          6 |         31 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Learning/Build/index.js        | JavaScript         |          7 |          0 |          2 |          9 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Learning/CAD/index.js          | JavaScript         |          7 |          0 |          2 |          9 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Learning/Electrical/index.js   | JavaScript         |          7 |          0 |          2 |          9 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Learning/Programming/index.js  | JavaScript         |          5 |          0 |          2 |          7 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Learning/index.js              | JavaScript         |         54 |          0 |          4 |         58 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Project/index.js               | JavaScript         |        296 |          1 |         27 |        324 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Scouter/CurrentEvents/index.js | JavaScript         |         10 |          0 |          5 |         15 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Scouter/PastEvents/index.js    | JavaScript         |        128 |          5 |         23 |        156 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Scouter/Team/index.js          | JavaScript         |         10 |          0 |          5 |         15 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/Scouter/index.js               | JavaScript         |         65 |          0 |          6 |         71 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamResources/index.js                       | JavaScript         |        429 |          0 |         32 |        461 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/TeamStructure/index.js                       | JavaScript         |         65 |          3 |         12 |         80 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/_app.js                                      | JavaScript         |         26 |          0 |          4 |         30 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/api/InsertSQL.js                             | JavaScript         |         25 |          7 |          9 |         41 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/api/hello.ts                                 | TypeScript         |         10 |          1 |          3 |         14 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/chat/index.js                                | JavaScript         |         31 |          1 |          7 |         39 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/chat/main/index.js                           | JavaScript         |        141 |          1 |         19 |        161 |
+| /Users/davidfales/Downloads/robotics-webpage-test/pages/index.js                                     | JavaScript         |        149 |          0 |         13 |        162 |
+| /Users/davidfales/Downloads/robotics-webpage-test/postcss.config.js                                  | JavaScript         |          6 |          0 |          1 |          7 |
+| /Users/davidfales/Downloads/robotics-webpage-test/public/json/events.json                            | JSON               |        292 |          0 |          2 |        294 |
+| /Users/davidfales/Downloads/robotics-webpage-test/public/json/teams.json                             | JSON               |      8,018 |          0 |          4 |      8,022 |
+| /Users/davidfales/Downloads/robotics-webpage-test/public/static/vercel.svg                           | XML                |          4 |          0 |          0 |          4 |
+| /Users/davidfales/Downloads/robotics-webpage-test/styles/globals.css                                 | CSS                |          3 |          4 |          2 |          9 |
+| /Users/davidfales/Downloads/robotics-webpage-test/tailwind.config.js                                 | JavaScript         |         14 |          1 |          3 |         18 |
+| /Users/davidfales/Downloads/robotics-webpage-test/text.html                                          | HTML               |         82 |          0 |         23 |        105 |
+| /Users/davidfales/Downloads/robotics-webpage-test/tsconfig.json                                      | JSON with Comments |         20 |          0 |          1 |         21 |
+| Total                                                                                                |                    |     35,950 |        332 |      1,076 |     37,358 |
++------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

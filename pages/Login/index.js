@@ -41,7 +41,7 @@ function Login() {
       <div className="h-full bg-gradient-to-tl from-red-600 to-white-200 w-full py-16 px-4">
         <div className="flex flex-col items-center justify-center">
           <Image
-            src={'/download.jpeg'}
+            src={'/images/download.jpeg'}
             alt="Home Page"
             className="rounded-lg"
             width={150}
