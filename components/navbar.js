@@ -148,6 +148,15 @@ const path = router.asPath
                             Team Structure
                           </a>
                         </Link>
+                        <Link href="/PastPerformance" legacyBehavior>
+                          <a
+                            onClick={closeDropdowns}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-300"
+                            role="menuitem"
+                          >
+                            Past Performances
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   )}
@@ -248,6 +257,14 @@ const path = router.asPath
                     className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
                   >
                     Team Structure
+                  </a>
+                </Link>
+                <Link href="/PastPerformance" legacyBehavior>
+                  <a
+                    onClick={closeDropdowns}
+                    className="block px-8 py-2 rounded-md text-base font-medium text-white hover:text-blue-300"
+                  >
+                    Past Performances
                   </a>
                 </Link>
               </div>
