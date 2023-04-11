@@ -14,11 +14,8 @@ export default function Index() {
     <div>
       <ChatPopup />
       <div className="bg-gray-800">
-        <h1 className="text-4xl bg-white">
-          Please "git pull" before working on code
-        </h1>
         <div className="">
-          <section class="relative bg-[url(../public/images/DSC_3898-01.jpeg)] bg-cover bg-center bg-no-repeat">
+          <section class="relative bg-[url(../public/filter/IMG_3252.jpeg)] bg-cover bg-center bg-no-repeat">
             <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -54,7 +51,7 @@ export default function Index() {
                     role="img"
                     aria-label="people smiling"
                     className="mx-auto w-full"
-                    src="./images/DSC_4026-01.jpeg"
+                    src="./filter/IMG_3167.JPG"
                     alt="people smiling"
                   />
                 </div>
@@ -116,7 +113,7 @@ export default function Index() {
 
                 <div className="md:pr-4 py-4">
                   <img
-                    src="./images/DSC_4032-01.jpeg"
+                    src="./filter/IMG_3231.jpeg"
                     alt="img"
                     className="w-full h-full object-cover rounded-lg "
                   />

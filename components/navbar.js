@@ -8,33 +8,29 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [isDropdownOpenAbout, setIsDropdownOpenAbout] = useState(false)
   const router = useRouter()
-    const navRef = useRef(null)
+  const navRef = useRef(null)
 
-     const handleClickOutside = event => {
-       if (navRef.current && !navRef.current.contains(event.target)) {
-         closeDropdowns()
-       }
-     }
+  const handleClickOutside = event => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      closeDropdowns()
+    }
+  }
 
-     useEffect(() => {
-       document.addEventListener('mousedown', handleClickOutside)
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside)
 
-       return () => {
-         document.removeEventListener('mousedown', handleClickOutside)
-       }
-     }, [])
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
+  const path = router.asPath
 
-const path = router.asPath
-
- const closeDropdowns = () => {
-   setIsDropdownOpen(false)
-   setIsDropdownOpenAbout(false)
-   setIsMenuOpen(false)
- }
- 
-
-
+  const closeDropdowns = () => {
+    setIsDropdownOpen(false)
+    setIsDropdownOpenAbout(false)
+    setIsMenuOpen(false)
+  }
 
   const menuIcon = (
     <span className="block w-6 text-white text-2xl leading-none">&#9776;</span>
@@ -43,7 +39,6 @@ const path = router.asPath
   const closeIcon = (
     <span className="block w-6 text-white text-2xl leading-none">&#x2715;</span>
   )
-
 
   return (
     <nav className="bg-gray-700" ref={navRef}>

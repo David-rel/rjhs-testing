@@ -6,10 +6,9 @@ import SearchBarEvents from '../../../components/searchbarevents'
 const Display = () => {
   const [dropdownValue, setDropdownValue] = useState('unknown')
 
-  const handleDropdownChange = (event) => {
+  const handleDropdownChange = event => {
     setDropdownValue(event.target.value)
   }
-
 
   return (
     <>
@@ -37,7 +36,10 @@ const Display = () => {
               Go to current events that rjhs 3729 is playing in
             </p>
             <Link
-              href={`/TeamResources/Scouter/CurrentEvents?id=${dropdownValue}&key=${dropdownValue.substring(dropdownValue.indexOf('2'), dropdownValue.length - 1)}`}
+              href={`/TeamResources/Scouter/CurrentEvents?id=${dropdownValue}&key=${dropdownValue.substring(
+                dropdownValue.indexOf('2'),
+                dropdownValue.length - 1
+              )}`}
             >
               <button className="bg-gray-800 text-white rounded-full py-2 px-4 mt-6 hover:bg-gray-900 mr-4">
                 Go

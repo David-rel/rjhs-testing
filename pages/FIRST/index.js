@@ -48,17 +48,17 @@ function FIRST() {
           <div className="lg:flex w-full lg:w-1/2 ">
             <img
               className="lg:block hidden w-full rounded-lg"
-              src="./images/DSC_3014-01.jpeg"
+              src="./filter/IMG_3237.jpeg"
               alt="people discussing on board"
             />
             <img
               className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-              src="./images/DSC_3014-01.jpeg"
+              src="./filter/IMG_3237.jpeg"
               alt="people discussing on board"
             />
             <img
               className="sm:hidden block w-full rounded-lg"
-              src="./images/DSC_3014-01.jpeg"
+              src="./filter/IMG_3237.jpeg"
               alt="people discussing on board"
             />
           </div>
@@ -68,17 +68,17 @@ function FIRST() {
           <div className="lg:flex items-center w-full lg:w-1/2">
             <img
               className="lg:block hidden w-full rounded-lg"
-              src="./images/DSC_3927-01.jpeg"
+              src="./filter/IMG_3198.JPG"
               alt="people discussing on board"
             />
             <img
               className="lg:hidden sm:block hidden w-full h-3/4 rounded-lg"
-              src="./images/DSC_3927-01.jpeg"
+              src="./filter/IMG_3198.JPG"
               alt="people discussing on board"
             />
             <img
               className="sm:hidden block w-full rounded-lg"
-              src="./images/DSC_3927-01.jpeg"
+              src="./filter/IMG_3198.JPG"
               alt="people discussing on board"
             />
           </div>

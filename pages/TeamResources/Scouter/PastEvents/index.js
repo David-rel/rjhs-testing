@@ -45,46 +45,40 @@ function Past() {
     callAPI()
   }, [])
 
-      useEffect(() => {
-        function httpGet(url, key) {
-          var xmlHttp = new XMLHttpRequest()
-          xmlHttp.open('GET', url, false)
-          xmlHttp.setRequestHeader('X-TBA-Auth-Key', key)
-          xmlHttp.send()
-          return xmlHttp.responseText
-        }
+  useEffect(() => {
+    function httpGet(url, key) {
+      var xmlHttp = new XMLHttpRequest()
+      xmlHttp.open('GET', url, false)
+      xmlHttp.setRequestHeader('X-TBA-Auth-Key', key)
+      xmlHttp.send()
+      return xmlHttp.responseText
+    }
 
-        httpGet(
-          `https://www.thebluealliance.com/api/v3/event/${key}/teams`,
-          'zldOgyr0zcuk7znnToBy3rbs8B6SmCnwaLd0Ew74DXSnPENUs58vPsYMYnpX3hyh'
+    httpGet(
+      `https://www.thebluealliance.com/api/v3/event/${key}/teams`,
+      'zldOgyr0zcuk7znnToBy3rbs8B6SmCnwaLd0Ew74DXSnPENUs58vPsYMYnpX3hyh'
+    )
+
+    //
+    //https://www.thebluealliance.com/api/v3/event/2022code/teams/statuses
+
+    const callAPI = async () => {
+      try {
+        const res = await fetch(
+          `https://www.thebluealliance.com/api/v3/event/${key}/teams`
         )
-
-        //
-        //https://www.thebluealliance.com/api/v3/event/2022code/teams/statuses
-
-        const callAPI = async () => {
-          try {
-            const res = await fetch(
-              `https://www.thebluealliance.com/api/v3/event/${key}/teams`
-            )
-            const data = await res.json()
-            console.log(data)
-            if (data) {
-              SetTeamKey(data)
-            }
-          } catch (err) {
-            console.log(err)
-          }
+        const data = await res.json()
+        console.log(data)
+        if (data) {
+          SetTeamKey(data)
         }
+      } catch (err) {
+        console.log(err)
+      }
+    }
 
-        callAPI()
-      }, [])
-
-
-
-
-
-
+    callAPI()
+  }, [])
 
   return (
     <div>
@@ -102,7 +96,7 @@ function Past() {
                 <div className="border-2 border-gray-400 my-2"></div>
                 {info && (
                   <div>
-                    {info.map((info) => (
+                    {info.map(info => (
                       <Ranking key={info.id} info={info} team_key={key} />
                     ))}
                   </div>
@@ -117,7 +111,7 @@ function Past() {
                 <div className="border-2 border-gray-400 my-2"></div>
                 {info && (
                   <div>
-                    {info.map((info) => (
+                    {info.map(info => (
                       <EPARanking key={info.id} info={info} event_key={key} />
                     ))}
                   </div>
@@ -132,7 +126,7 @@ function Past() {
                 <div className="border-2 border-gray-400 my-2"></div>
                 {teamKey && (
                   <div>
-                    {teamKey.map((teamKey) => (
+                    {teamKey.map(teamKey => (
                       <AwardRanking
                         key={teamKey.id}
                         team_key={teamKey}

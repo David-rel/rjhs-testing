@@ -113,10 +113,16 @@ function Event() {
               <strong>Qualification Ranking:</strong> {info.qual?.ranking.rank}
             </p>
             <p>
-              <strong>Qualification Record (W-L-T):</strong>{' '}
-              {info.qual?.ranking.record.wins}-
-              {info.qual?.ranking.record.losses}-
-              {info.qual?.ranking.record.ties}
+              {info.qual?.ranking.record == null ? (
+                <></>
+              ) : (
+                <div>
+                  <strong>Qualification Record (W-L-T):</strong>
+                  {info.qual?.ranking.record.wins}-
+                  {info.qual?.ranking.record.losses}-
+                  {info.qual?.ranking.record.ties}
+                </div>
+              )}
             </p>
           </div>
         </section>
