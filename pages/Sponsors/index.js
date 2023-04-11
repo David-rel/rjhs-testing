@@ -2,7 +2,7 @@ import React from 'react'
 import ChatPopup from '../../components/ChatPopup'
 
 
-function Sponsors() {
+function PhotoCollage({ photos, description }) {
   return (
     <div>
       <ChatPopup />
@@ -24,9 +24,43 @@ function Sponsors() {
           </div>
         </div>
       </section>
-      Sponsors here
+
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-3 gap-4">
+          {photos.map((photo, index) => (
+            <div key={index} className={`col-span-${index === 0 ? 2 : 1}`}>
+              <img
+                src={photo.url}
+                alt={photo.alt}
+                className="object-scale-down w-full h-64 rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="mt-4">
+          <p className="text-center text-xl font-semibold">{description}</p>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Sponsors
+const photos = [
+  { url: '/sponsors/armycorp.gif', alt: 'Photo 1' },
+  { url: '/sponsors/lockkheed.png', alt: 'Photo 2' },
+  { url: '/sponsors/raytheon.jpg', alt: 'Photo 3' },
+  { url: '/sponsors/regis.png', alt: 'Photo 4' },
+  { url: '/sponsors/zeta.jpg', alt: 'Photo 5' }
+]
+
+const description = 'Thank you to our sponsors for helping us complete our goals. If you or your company is interested in being a sponsor for the RJHS 3729 Raiders Contact Us'
+
+const HomePage = () => {
+  return (
+    <div>
+      <PhotoCollage photos={photos} description={description} />
+    </div>
+  )
+}
+
+export default HomePage
