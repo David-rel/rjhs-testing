@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Programming() {
@@ -6,17 +7,17 @@ function Programming() {
 
   return (
     <div>
-      <div className="flex min-h-screen bg-gray-100">
+      <main className="flex min-h-screen bg-gray-100">
         <div className="container mx-auto my-auto">
-          <div className="bg-white shadow-md rounded-lg p-14 flex">
-            <div className="flex flex-col items-start justify-center w-1/2">
-              <h2 className="text-6xl font-bold mb-6 mr-2">Programming</h2>
+          <div className="bg-white shadow-md rounded-lg p-14 flex flex-col lg:flex-row">
+            <div className="flex flex-col items-start justify-center w-full lg:w-1/2 mb-6 lg:mb-0">
+              <h2 className="text-6xl font-bold mb-6 mr-2"> Programming</h2>
               <p className="text-2xl text-gray-600">
-                Learn programming with our interactive tutorials and build
-                amazing projects with your WPILib skill set.
+                Learn Java and WPILib programming for coding robotics with these
+                steps/chapters that we provide.
               </p>
             </div>
-            <div className="w-3/4">
+            <div className="w-full lg:w-3/4">
               <img
                 className="object-cover h-full w-full rounded-lg max-w-none"
                 src="/filter/IMG_3167.JPG"
@@ -25,7 +26,7 @@ function Programming() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       <div className="flex flex-col min-h-screen bg-gray-100 items-center justify-center pb-12">
         <div className="container mx-auto my-auto text-center">
@@ -37,9 +38,11 @@ function Programming() {
             you are and continue your journey. Use these to track your learning.
           </p>
           <div className="flex flex-col items-center">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-2 w-full">
-              I haven't even downloaded it yet
-            </button>
+            {/* <Link href="/" className='w-full'> */}
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-2 w-full">
+                I haven't even downloaded it yet
+              </button>
+            {/* </Link> */}
             <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-2 w-full">
               I have it downloaded and I am ready to start learning
             </button>

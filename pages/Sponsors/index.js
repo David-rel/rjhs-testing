@@ -2,7 +2,7 @@ import React from 'react'
 import ChatPopup from '../../components/ChatPopup'
 
 
-function PhotoCollage({ photos, description }) {
+function PhotoCollage() {
   return (
     <div>
       <ChatPopup />
@@ -26,41 +26,67 @@ function PhotoCollage({ photos, description }) {
       </section>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-3 gap-4">
-          {photos.map((photo, index) => (
-            <div key={index} className={`col-span-${index === 0 ? 2 : 1}`}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="md:col-span-1">
+            <div className="h-64 md:h-auto">
               <img
-                src={photo.url}
-                alt={photo.alt}
-                className="object-scale-down w-full h-64 rounded-md"
+                src="/sponsors/armycorp.gif"
+                alt="Photo 1"
+                className="object-contain w-full h-full rounded-md"
               />
             </div>
-          ))}
+          </div>
+          <div>
+            <div className="h-64 md:h-auto">
+              <img
+                src="/sponsors/lockkheed.png"
+                alt="Photo 2"
+                className="object-contain w-full h-full rounded-md"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="h-64 md:h-auto">
+              <img
+                src="/sponsors/raytheon.jpg"
+                alt="Photo 3"
+                className="object-contain w-full h-full rounded-md"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="h-64 md:h-auto">
+              <img
+                src="/sponsors/regis.png"
+                alt="Photo 4"
+                className="object-contain w-full h-full rounded-md"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="h-64 md:h-auto">
+              <img
+                src="/sponsors/zeta.jpg"
+                alt="Photo 5"
+                className="object-contain w-full h-full rounded-md"
+              />
+            </div>
+          </div>
         </div>
         <div className="mt-4">
-          <p className="text-center text-xl font-semibold">{description}</p>
+          <p className="text-center text-xl font-semibold">
+            Thank you to our sponsors for helping us complete our goals. If you
+            or your company is interested in being a sponsor for the RJHS 3729
+            Raiders Contact Us
+          </p>
         </div>
       </div>
     </div>
   )
 }
 
-const photos = [
-  { url: '/sponsors/armycorp.gif', alt: 'Photo 1' },
-  { url: '/sponsors/lockkheed.png', alt: 'Photo 2' },
-  { url: '/sponsors/raytheon.jpg', alt: 'Photo 3' },
-  { url: '/sponsors/regis.png', alt: 'Photo 4' },
-  { url: '/sponsors/zeta.jpg', alt: 'Photo 5' }
-]
 
-const description = 'Thank you to our sponsors for helping us complete our goals. If you or your company is interested in being a sponsor for the RJHS 3729 Raiders Contact Us'
 
-const HomePage = () => {
-  return (
-    <div>
-      <PhotoCollage photos={photos} description={description} />
-    </div>
-  )
-}
 
-export default HomePage
+
+export default PhotoCollage
